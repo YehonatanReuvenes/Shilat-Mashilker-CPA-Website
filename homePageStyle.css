@@ -4,37 +4,52 @@ body{
 }
 
 header{
-    height: 100px;
-    background-color: aquamarine;
+    height: 150px;
+    background-color: white;
+    text-align: center;
 }
 
 nav{
-    height: 50px;
-    background-color: blue;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #CDAF69;
+    text-align: center;
+}
+nav a{
+    padding-right: 1.5%;
+    padding-left: 1.5%;
 }
 
 main{
-    height: 779px;
-    background-color:red;
+    height: 729px;
+    background-color:black;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 100px #E3CB68;
 }
 
 footer {
-    position: relative;
-    height: 400px;
-    background-color: blueviolet;
+    background-color: #CBBD90;
+    --font-size: 30px;
+    font-size: var(--font-size);
+    direction: rtl;
+    padding-right: 50PX;
 }
-
-footer iframe {
-    height: 100%;
+footer a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    color: black;
 }
-
-footer div {
-    position: absolute;
-    right: 100px;
-    top: 0;
-    bottom: 0;
-    width: calc(100% - 900px);
-    background-color: black;
-    text-align: right;
-    color: white;
+footer a img{
+    max-height: var(--font-size);
 }
