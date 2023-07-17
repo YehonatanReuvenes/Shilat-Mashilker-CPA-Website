@@ -4,9 +4,20 @@ body{
 }
 
 header{
-    height: 150px;
+    height: fit-content;
     background-color: white;
     text-align: center;
+}
+.contact{
+    background-color: #CDAF69;
+    --box-height: 20px;
+    height: var(--box-height) + 5px;
+    text-align: left;
+}
+.contact img{
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: var(--box-height);
 }
 
 nav{
@@ -65,7 +76,7 @@ main{
 
 footer {
     background-color: #CBBD90;
-    --font-size: 20 px;
+    --font-size: 20px;
     font-size: var(--font-size);
     direction: rtl;
     padding-right: 50PX;
