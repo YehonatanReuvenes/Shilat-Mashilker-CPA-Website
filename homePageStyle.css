@@ -41,14 +41,14 @@ main{
     color: white;
     background-color:black;
 }
-.services {
+.clients {
     width: 100%;
     display: flex;
     justify-content: center; 
     text-align: center;
     padding-bottom: 20px;
 }
-.service_circle {
+.client_circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -63,8 +63,57 @@ main{
     font-size: 24px;
     font-weight: bold;
 }
+main h1{
+    color: #ecdf98;
+}
+main h2{
+    color: #ecdf98;
+}
   
+.image-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/background.avif");
+    background-size: cover;
+    background-position: center;
+  }
 
+summary{
+    background-color: #ecdf98;
+    font-family: Calibri ;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+summary p{
+    /* text-align: right; */
+    direction: rtl;
+}
+
+.services {
+    padding-top: 20px;
+    text-align: center;
+}
+.services table {
+    margin: 0 auto;
+}
+.services .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services td {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    font-weight: bold; 
+}
+.services img{
+    max-height: 100px;
+}
 /* input[type="text"] {
     width: 300px;
     padding: 10px;
@@ -92,17 +141,14 @@ footer a img{
     max-height: var(--font-size);
 }
 
-h1{
-    color: #ecdf98;
-    margin: 0;
-}
-h2{
-    color: #ecdf98;
-    margin: 0;
-    padding: 5px;
-}
-
 a{
     color: black;
     text-decoration: none;
+}
+h1{
+    margin: 0;
+}
+h2{
+    margin: 0;
+    padding: 5px;
 }
