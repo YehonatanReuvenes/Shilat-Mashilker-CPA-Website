@@ -1,6 +1,7 @@
 body{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
 }
 
 main{
@@ -9,7 +10,7 @@ main{
     font-family: Calibri ;
     text-align: center;
     color: white;
-    background-color:black;
+    background-color:rgb(0, 0, 0);
 }
 .clients {
     width: 100%;
@@ -42,25 +43,27 @@ main h2{
   
 .image-container {
     width: 100%;
-    height: 100vh;
-    background-image: url("img/background.avif");
+    height: 50vh;
+    background-image: url("img/background.jpg");
     background-size: cover;
     background-position: center;
-  }
+}
 
-summary{
-    background-color: #ecdf98;
-    font-family: Calibri ;
+summary {
+    background: linear-gradient(to right, rgba(236, 223, 152, 0.8),rgba(236, 223, 152, 0.8)) , url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Calibri;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-summary p{
-    /* text-align: right; */
-    direction: rtl;
-}
+
+/* summary p{
+    text-align: right;
+} */
 
 .services {
     padding-top: 20px;
@@ -84,16 +87,57 @@ summary p{
 .services img{
     max-height: 100px;
 }
-/* input[type="text"] {
+
+.make_contact{  
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.make_contact table{
+    margin-right: 5%;
+}
+input[type="text"] {
     width: 300px;
+    margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     outline: none;
     border-color: white;
-    box-shadow: 0 0 100px #E3CB68;
-} */
+    box-shadow: 0 0 50px #E3CB68;
+    color: gray;
+}
+input[type="text"][placeholder="פרטי הפנייה"]{
+    width: 670px;
+}
+select {
+    width: 320px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 50px #E3CB68;
+    color: grey;
+}
+button {
+    width: 320px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #E3CB68;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;  
+    background-color: #E3CB68;
+    box-shadow: 0 0 50px #E3CB68;
+    color: black;
+}
 
 h1{
     margin: 0;
@@ -101,4 +145,4 @@ h1{
 h2{
     margin: 0;
     padding: 5px;
-}
+} 

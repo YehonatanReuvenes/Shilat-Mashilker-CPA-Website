@@ -9,6 +9,10 @@
                                         שירותים: ראיית חשבון והנהלת חשבונות.">
     <link rel="stylesheet" href="homePageStyle.css">
     <title>שילת משילקר- משרד רואי חשבון</title>
+
+
+    <script src="make_contact.js"></script>
+
 </head>
  
 <body>
@@ -17,17 +21,17 @@
     <main>
         <h1> שילת משילקר </h1>
         <h2> משרד רואי חשבון </h2>
-        <p> שירותי ראיית חשבון, הכנת דוחות שנתיים, ייצוג ברשויות המס,הנהלת חשבונות, חשבות שכר, ייעוץ עסקי</p>
+        <p> שירותי ראיית חשבון, הכנת דוחות שנתיים, ייצוג ברשויות המס, הנהלת חשבונות, חשבות שכר, ייעוץ עסקי</p>
         <div class="clients"> 
-            <div class="client_circle"> עוסקים פטורים </div>  
-            <div class="client_circle"> עוסקים מורשים </div>
-            <div class="client_circle"> שותפויות </div>
-            <div class="client_circle"> עמותות </div>
             <div class="client_circle"> חברות </div>
+            <div class="client_circle"> עמותות </div>
+            <div class="client_circle"> שותפויות </div>
+            <div class="client_circle"> עוסקים מורשים </div>
+            <div class="client_circle"> עוסקים פטורים </div>  
         </div>
     </main>
 
-    <div class="image-container"></div>
+    <!-- <div class="image-container"></div> -->
     
     <summary> 
         <h1> קצת על המשרד</h1>
@@ -46,6 +50,7 @@
 
     <div class="services">
         <h1>שירותי המשרד</h1>
+
         <table>
             <tr>
                 <td>
@@ -90,15 +95,50 @@
         </table>
     </div>
 
-
-<!-- ניתן גם להשאיר פרטים ונחזור אליכם
-שם 
-מייל
-טלפון 
-פרטי הפניה
-בחירה מרובה
-סוג עסק
-חברה בע"מ  ,עמותה ,מלכ"ר, שותפות, עוסק מורשה,עוסק פטור, החזר מס  -->
+    <div class="make_contact">
+        <h1>ניתן גם להשאיר פרטים ונחזור אליכם</h1>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="שם פרטי" placeholder="*שם פרטי">
+                </td>
+                <td>
+                    <input type="text" id="מספר טלפון" placeholder="*מספר טלפון">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="שם משפחה" placeholder="*שם משפחה">
+                </td>
+                <td>
+                    <input type="text" id="דואר אלקטרוני" placeholder="*דואר אלקטרוני">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="פרטי הפנייה" placeholder="פרטי הפנייה">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="סוג עסק">
+                        <option value="">*בחר סוג עסק</option>
+                        <option value="פתיחת עוסק">פתיחת עוסק</option>
+                        <option value="חברה בעמ">חברה בע"מ</option>
+                        <option value="עמותה">עמותה</option>
+                        <option value="מלכר">מלכ"ר</option>
+                        <option value="שותפות">שותפות</option>
+                        <option value="עוסק מורשה">עוסק מורשה</option>
+                        <option value="עוסק פטור">עוסק פטור</option>
+                        <option value="החזר מס">החזר מס</option>
+                    </select>       
+                </td>
+                <td>   
+                    <button type="button" onclick="showMessage()">צור קשר</button>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <div id="footer-container"></div>
 
