@@ -13,3 +13,10 @@ fetch('foot.html')
   .then(content => {
     footerContainer.innerHTML = content;
   });
+
+// Lo0ad WhatsApp Icon
+window.addEventListener('scroll', function() {
+  var button = document.getElementById('scrollButton');
+  button.style.display = 'block';
+});
+
