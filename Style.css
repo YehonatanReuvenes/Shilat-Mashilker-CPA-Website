@@ -2,6 +2,7 @@ body{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
+    direction: rtl;
 }
 
 header{
