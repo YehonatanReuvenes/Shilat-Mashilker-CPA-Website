@@ -14,9 +14,4 @@ fetch('foot.html')
     footerContainer.innerHTML = content;
   });
 
-// Lo0ad WhatsApp Icon
-window.addEventListener('scroll', function() {
-  var button = document.getElementById('scrollButton');
-  button.style.display = 'block';
-});
 

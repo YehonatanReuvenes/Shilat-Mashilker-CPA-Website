@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ServicesStyle.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <table>
+        <tr>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 1</div>
+                    <div class="text">Text 1</div>
+                </div>
+                <div class="additional-text">More Text 1</div>
+            </td>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 2</div>
+                    <div class="text">Text 2</div>
+                </div>
+                <div class="additional-text">More Text 2</div>
+            </td>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 5</div>
+                    <div class="text">Text 5</div>
+                </div>
+                <div class="additional-text">More Text 5</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 3</div>
+                    <div class="text">Text 3</div>
+                </div>
+                <div class="additional-text">More Text 3</div>
+            </td>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 4</div>
+                    <div class="text">Text 4</div>
+                </div>
+                <div class="additional-text">More Text 4</div>
+            </td>
+            <td class="cell" onclick="toggleText(this)">
+                <div class="container">
+                    <div class="triangle"></div>
+                    <div class="icon">Icon 6</div>
+                    <div class="text">Text 6</div>
+                </div>
+                <div class="additional-text">More Text 6</div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function toggleText(cell) {
+            const additionalText = cell.querySelector('.additional-text');
+            additionalText.style.display = additionalText.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    
+    <div id="footer-container"></div>
+
+    <script src="load_Head_Foot.js"></script>
+</body>
+</html>

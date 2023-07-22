@@ -59,7 +59,7 @@ a{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
+  display: block;
 }
 #scrollButton img{
     max-height: 60px;
