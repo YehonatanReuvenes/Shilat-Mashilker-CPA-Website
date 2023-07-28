@@ -50,7 +50,7 @@ main h2{
 }
 
 summary {
-    background: linear-gradient(to right, rgba(236, 223, 152, 0.8),rgba(236, 223, 152, 0.8)) , url("img/HomePageBackground.jpg");
+    background: linear-gradient(to right, rgba(236, 223, 152, 0.8), rgba(236, 223, 152, 0.8)) , url('../img/HomePageBackground.jpg');
     background-size: cover;
     background-position: center;
     font-family: Calibri;

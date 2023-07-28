@@ -1,3 +1,5 @@
+
+
 var firstName;
 var lastName;
 var phoneNumber;
@@ -28,24 +30,24 @@ function showMessage() {
 }
 
 function sendEmail(){
-    // var scriptTag = document.createElement('script');
-    // scriptTag.src = 'https://smtpjs.com/v3/smtp.js';
-    // scriptTag.onload = function() {
-    //     Email.send({
-    //         Host : "smtp.elasticemail.com",
-    //         Username : "jonatan3705@gmail.com",
-    //         Password : "B7EDBB544ABDECA31EE826C0D484AB50A8DF",
-    //         To : 'jonatan3705@gmail.com',
-    //         From : "jonatan3705@gmail.com",
-    //         Subject : "לקוח חדש יוצר קשר דרך האתר",
-    //         Body :  "שם:" +firstName+ " " +lastName+
-    //                 "<br>מספר טלפון:" +phoneNumber+
-    //                 "<br>כתובת מייל:" +email+
-    //                 "<br>סוג עסק:" +businessType+
-    //                 "<br>פרטים נוספים:" +details
-    //     }).then(
-    //       message => alert(message)
-    //     );
-    // };
-    // document.head.appendChild(scriptTag);
+    var scriptTag = document.createElement('script');
+    scriptTag.src = 'https://smtpjs.com/v3/smtp.js';
+    scriptTag.onload = function() {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "jonatan3705@gmail.com",
+            Password : "B7EDBB544ABDECA31EE826C0D484AB50A8DF",
+            To : 'jonatan3705@gmail.com',
+            From : "jonatan3705@gmail.com",
+            Subject : "לקוח חדש יוצר קשר דרך האתר",
+            Body :  "שם:" +firstName+ " " +lastName+
+                    "<br>מספר טלפון:" +phoneNumber+
+                    "<br>כתובת מייל:" +email+
+                    "<br>סוג עסק:" +businessType+
+                    "<br>פרטים נוספים:" +details    
+        }).then(
+          message => alert(message)
+        );
+    };
+    document.head.appendChild(scriptTag);
 }

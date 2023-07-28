@@ -3,3 +3,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     direction: rtl;
 }
+
+main{
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)  ) , url('../img/AboutBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Calibri;
+}
+p{
+    font-size: 19px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 8%;
+    margin: 0;
+    width: 50%; 
+    line-height: 1.5;  
+}

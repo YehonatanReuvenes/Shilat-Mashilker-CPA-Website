@@ -13,5 +13,3 @@ fetch('foot.html')
   .then(content => {
     footerContainer.innerHTML = content;
   });
-
-
