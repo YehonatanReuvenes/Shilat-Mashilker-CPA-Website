@@ -54,7 +54,8 @@ footer a img{
 
 a{
     color: black;
-    text-decoration: none;
+    text-decoration: none; 
+    text-underline-offset: 5px;
 }
 
 #scrollButton {
