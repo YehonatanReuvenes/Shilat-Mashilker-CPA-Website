@@ -46,7 +46,7 @@ main {
         width: 100%;
     }
 }
-  
+ 
 .container {
     position: relative;
     display: flex;
@@ -54,7 +54,7 @@ main {
     align-items: center;
     color: #ecdf98;
 }
- 
+
 main img{
     width: 80px;
     height: 80px;
@@ -64,11 +64,55 @@ main img{
     margin-top: -30px;
     margin-bottom: 20px;
 }
-  
+
 .additional-text {
     display: none;
     padding: 10px;
     margin-top: 5px;
     color: #ecdf98;
 }
-  
+ 
+.dialog {
+    direction: rtl;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/ServicesDialogBackground.avif);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px #E3CB68;
+}
+.dialog nav{
+    display: flex;
+    border-radius: 5px;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    height: 40px;
+    width: 100%;
+    color: black;
+    font-size: 15px;
+}
+.dialog .close-button {
+    padding: 5px;
+    padding-right: 10px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dialog nav p{
+    padding: 0;
+    margin: 10px;
+    font-size: 20px;
+}
+.dialog p{
+    padding-right: 10px;
+}

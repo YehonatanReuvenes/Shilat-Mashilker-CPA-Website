@@ -12,60 +12,70 @@
 
     <div class="servicesContainer">
         <main>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('דוחות כספיים')">
                 <div class="container">
                     <img src="img/Services Icons/דוחות כספיים gold.png" alt="SMoffice_דוחות כספיים" />
                     דוחות כספיים
                 </div>
-                <div class="additional-text">More Text 1</div>
             </div>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('שירותי ביקורת','ביקורת הכוונה לפעולות שעל רואה החשבון לבצע לצורך מתן חוות דעת אודות שיקוף הדוחות הכספיים את מצב החברה המבוקרת תקינותם של הדוחות הכספיים וכל זאת לתאריך המאזן.<br>חוות הדעת מצורפת לדוחות הכספיים של החברה.<br>עבודת הביקרת נעשית על ידי רואה חשבון מוסמך ובעל ניסיון.')">
                 <div class="container">
                     <img src="img/Services Icons/שירותי ביקורת gold.png" alt="SMoffice_שירותי ביקורת" />
                     שירותי ביקורת
                 </div>
-                <div class="additional-text">ביקורת הכוונה לפעולות שעל רואה החשבון לבצע לצורך מתן חוות דעת אודות שיקוף הדוחות הכספיים את מצב החברה המבוקרת תקינותם של הדוחות הכספיים וכל זאת לתאריך המאזן.
-                    חוות הדעת מצורפת לדוחות הכספיים של החברה.
-                    עבודת הביקרת נעשית על ידי רואה חשבון מוסמך ובעל ניסיון.
-                    </div>
             </div>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('הנהלת חשבונות')">
                 <div class="container">
                     <img src="img/Services Icons/הנהלת חשבונות gold.png" alt="SMoffice_הנהלת חשבונות" />
                     הנהלת חשבונות
                 </div>
-                <div class="additional-text">More Text 5</div>
             </div>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('משכורות')"> 
                 <div class="container">
                     <img src="img/Services Icons/משכורות gold.png" alt="SMoffice_משכורות" />
                     משכורות
                 </div>
-                <div class="additional-text">More Text 3</div>
             </div>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('ייצוג מול רשויות המס')">
                 <div class="container">
                     <img src="img/Services Icons/ייצוג מול רשויות המס gold.png" alt="SMoffice_ייצוג מול רשויות המס" />
                     ייצוג מול רשויות המס
                 </div>
-                <div class="additional-text">More Text 4</div>
             </div>
-            <div class="cell" onclick="toggleText(this)">
+            <div class="cell" onclick="openDialog('ייעוץ עסקי')">
                 <div class="container">
                     <img src="img/Services Icons/ייעוץ עסקי gold.png" alt="SMoffice_ייעוץ עסקי" />
                     ייעוץ עסקי
                 </div>
-                <div class="additional-text">More Text 6</div>
             </div>  
         </main>
     </div>
+
+    <!-- Hidden dialog -->
+    <div id="dialog" class="dialog">
+        <nav>
+            <button class="close-button" onclick="closeDialog()">&times;</button>
+            <p id="dialog-title">This is the title of the dialog</p>
+        </nav>
+        <p id="dialog-message">This is the message inside the dialog.</p>
+    </div>
+
+
     <script>
-        function toggleText(cell) {
-            const additionalText = cell.querySelector('.additional-text');
-            additionalText.style.display = additionalText.style.display === 'block' ? 'none' : 'block';
+        function openDialog(title,  message) {
+          var dialog = document.getElementById('dialog');
+          var dialogMessage = document.getElementById('dialog-message');
+          var dialogTitle = document.getElementById('dialog-title');
+          dialogMessage.innerHTML = message;
+          dialogTitle.innerHTML = title;
+          dialog.style.display = 'block';
+        }
+
+        function closeDialog() {
+          var dialog = document.getElementById('dialog');
+          dialog.style.display = 'none';
         }
     </script>
-
     
     <div id="footer-container"></div>
 
