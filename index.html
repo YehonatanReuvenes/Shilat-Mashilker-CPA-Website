@@ -7,6 +7,8 @@
     <title>שילת משילקר- משרד רואי חשבון</title>
     <meta name="description" content="משרד רואי חשבון המעמיד שירות ויחס אישי ומקצועי למגוון לקוחות כגון חברות, עמותות, מלכ&quot;רים, עצמאים, שכירים בכל חלקי הארץ.&#10;המשרד מספק מכלול שירותים: ראיית חשבון, ביקורת פנים, דוחות שנתיים, ייעוץ עסקי, הנהלת חשבונות, החזרי מס וחשבות שכר.">
     <link rel="stylesheet" href="Styles/homePageStyle.css">
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="make_contact.js"></script>
 </head>
  
@@ -90,47 +92,53 @@
 
     <div class="make_contact">
         <h1>ניתן גם להשאיר פרטים ונחזור אליכם</h1>
-        <table>
-            <tr>
-                <td>
-                    <input type="text" id="שם פרטי" placeholder="*שם פרטי">
-                </td>
-                <td>
-                    <input type="text" id="מספר טלפון" placeholder="*מספר טלפון">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" id="שם משפחה" placeholder="*שם משפחה">
-                </td>
-                <td>
-                    <input type="text" id="דואר אלקטרוני" placeholder="*דואר אלקטרוני">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="text" id="פרטי הפנייה" placeholder="פרטי הפנייה">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="סוג עסק">
-                        <option value="">*בחר סוג עסק</option>
-                        <option value="פתיחת עוסק">פתיחת עוסק</option>
-                        <option value="חברה בעמ">חברה בע"מ</option>
-                        <option value="עמותה">עמותה</option>
-                        <option value="מלכר">מלכ"ר</option>
-                        <option value="שותפות">שותפות</option>
-                        <option value="עוסק מורשה">עוסק מורשה</option>
-                        <option value="עוסק פטור">עוסק פטור</option>
-                        <option value="החזר מס">החזר מס</option>
-                    </select>       
-                </td>
-                <td>   
-                    <button type="button" onclick="showMessage()">צור קשר</button>
-                </td>
-            </tr>
-        </table>
+
+
+        <form action="https://formspree.io/f/xrgweene" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="שם פרטי" name="שם פרטי" placeholder="*שם פרטי" required>
+                    </td>
+                    <td>
+                        <input type="text" id="מספר טלפון" name="מםפר טלפון" placeholder="*מספר טלפון" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="שם משפחה" name="שם משפחה" placeholder="*שם משפחה" required>
+                    </td>
+                    <td>
+                        <input type="email" id="אימייל" name="email" placeholder="*דואר אלקטרוני" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" id="פרטי הפנייה" name="פרטי הפנייה" placeholder="פרטי הפנייה">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="סוג עסק" name="סוג עסק" required>
+                            <option value="">*בחר סוג עסק</option>
+                            <option value="פתיחת עוסק">פתיחת עוסק</option>
+                            <option value="חברה בעמ">חברה בע"מ</option>
+                            <option value="עמותה">עמותה</option>
+                            <option value="מלכר">מלכ"ר</option>
+                            <option value="שותפות">שותפות</option>
+                            <option value="עוסק מורשה">עוסק מורשה</option>
+                            <option value="עוסק פטור">עוסק פטור</option>
+                            <option value="החזר מס">החזר מס</option>
+                        </select>       
+                    </td>
+                    <td>   
+                        <button type="submit">צור קשר</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
     </div>
 
     <div id="footer-container"></div>

@@ -114,5 +114,8 @@ main img{
     font-size: 20px;
 }
 .dialog p{
-    padding-right: 10px;
+    font-family: Calibri;
+    padding: 20px;
+    padding-left: 40%;
+    padding-right: 40px;
 }

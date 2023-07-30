@@ -95,7 +95,7 @@ summary {
 .make_contact table{
     margin-right: 5%;
 }
-input[type="text"] {
+input{
     width: 300px;
     margin: 20px;
     padding: 10px;
