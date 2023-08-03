@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+}
+
+main{
+    min-height: calc(100vh - 339px);
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.make_contact{  
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.make_contact table{
+    margin-right: 5%;
+}
+input{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 50px #E3CB68;
+    color: gray;
+}
+input[type="text"][placeholder="פרטי הפנייה"]{
+    width: 670px;
+}
+select {
+    width: 320px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 50px #E3CB68;
+    color: grey;
+}
+button {
+    width: 320px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #E3CB68;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;  
+    background-color: #E3CB68;
+    box-shadow: 0 0 50px #E3CB68;
+    color: black;
+}
+
+h1{
+    margin: 0;
+}
