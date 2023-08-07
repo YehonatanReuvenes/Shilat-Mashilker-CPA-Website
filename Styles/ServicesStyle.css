@@ -16,12 +16,13 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 800px;
 }
 
 .cell {
     position: relative;
+    margin: 10  px;
     padding-top: 100px;
     padding-bottom: 80px;
     text-align: center;
@@ -64,13 +65,6 @@ main img{
     margin-top: -30px;
     margin-bottom: 20px;
 }
-
-.additional-text {
-    display: none;
-    padding: 10px;
-    margin-top: 5px;
-    color: #ecdf98;
-}
  
 .dialog {
     direction: rtl;
@@ -78,8 +72,8 @@ main img{
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 50%;
-    height: 50%;
+    width: 1000px;
+    max-width: 100% ;
     color: white;
     transform: translate(-50%, -50%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/ServicesDialogBackground.avif);
