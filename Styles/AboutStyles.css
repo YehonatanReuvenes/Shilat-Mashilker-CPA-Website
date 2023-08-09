@@ -5,11 +5,13 @@ body{
 }
 
 main{
-    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8)  ) , url('../img/AboutBackground.jpg');
+    background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)  ) , url('../img/AboutBackground.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     font-family: Calibri;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 p{
     font-size: 19px;
@@ -18,5 +20,5 @@ p{
     padding-right: 8%;
     margin: 0;
     width: 50%; 
-    line-height: 1.5;  
+    line-height: 1.2;  
 }

@@ -2,24 +2,36 @@ body{
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
-    direction: rtlהנ    ;
+    direction: rtl;
 }
 
 header{
-    height: fit-content;
+    height: fit-content; 
     background-color: white;
     text-align: center;
 }
 .contact{
+    direction: ltr;
+    padding-right: 10px;
+    padding-left: 10px;
     background-color: black;
-    --box-height: 20px;
+    --box-height: 30px;
     height: var(--box-height) + 5px;
     text-align: left;
+    align-items: center;
+    color: white;
+    display: flex;
 }
 .contact img{
     margin-left: 5px;
     margin-right: 5px;
     max-height: var(--box-height);
+}
+.contact p {
+    display: inline;
+    margin: 0; 
+    color: #cdad7d;
+    font-size: 20px;
 }
 
 nav{
@@ -42,6 +54,7 @@ footer {
     font-size: var(--font-size);
     direction: rtl;
     padding-right: 90PX;
+    font-family: Calibri;
 }
 footer a{
     padding-top: 5px;
