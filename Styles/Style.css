@@ -19,7 +19,7 @@ header{
     height: var(--box-height) + 5px;
     text-align: left;
     align-items: center;
-    color: white;
+    color: #cdad7d;
     display: flex;
 }
 .contact img{
@@ -27,12 +27,7 @@ header{
     margin-right: 5px;
     max-height: var(--box-height);
 }
-.contact p {
-    display: inline;
-    margin: 0; 
-    color: #cdad7d;
-    font-size: 20px;
-}
+
 header img{
     max-height: 120px;
 }
