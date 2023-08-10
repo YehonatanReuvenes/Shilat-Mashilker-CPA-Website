@@ -5,7 +5,7 @@ body {
 }
 
 main{
-    min-height: calc(100vh - 339px);
+    min-height: calc(100vh - 319px);
     background-color: black;
     color: white;
 }
