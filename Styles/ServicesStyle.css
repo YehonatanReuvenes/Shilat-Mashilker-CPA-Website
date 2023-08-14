@@ -65,54 +65,8 @@ main img{
     margin-top: -30px;
     margin-bottom: 20px;
 }
- 
+
 .dialog {
-    direction: rtl;
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 1000px;
-    max-width: 100% ;
-    color: white;
-    transform: translate(-50%, -50%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/ServicesDialogBackground.avif);
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 50px #E3CB68;
-    font-weight: bold;
-}
-.dialog nav{
-    display: flex;
-    border-radius: 5px;
-    padding: 0;
-    direction: rtl;
-    text-align: right;
-    height: 40px;
-    width: 100%;
-    color: black;
-    font-size: 15px;
-}
-.dialog .close-button {
-    padding: 5px;
-    padding-right: 10px;
-    font-size: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.dialog nav p{
-    padding: 0;
-    margin: 10px;
-    font-size: 20px;
-}
-.dialog p{
-    font-family: Calibri;
-    padding: 20px;
-    padding-left: 40%;
-    padding-right: 40px;
-    font-size: 20px;
-    line-height: 1.2;
+    width: 1000px;
 }

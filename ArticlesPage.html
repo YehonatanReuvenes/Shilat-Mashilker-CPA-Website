@@ -6,16 +6,36 @@
     <title>שילת משילקר- משרד רואי חשבון- מאמרים</title>
     <meta name="description" content="שילת משלקר משרד רואי חשבון – מנגיש לרשותכם מספר מאמרים במגוון תחומים אשר יכולים לסייע לכם ולהעצים את הידע הקיים החל מפתיחת עסק וקבלת ההחלטה, ביטוח לאומי, חברות, עמותות וכו'.">
     <link rel="stylesheet" href="Styles/ArticlesStyle.css">
+    <link rel="stylesheet" href="Styles/dialogStyle.css">
 </head>
 <body>
     <div id="header-container" data-page="Articles"></div>
 
     <main>
-        
+        <div class="articles">
+        </div>
     </main>
 
     <div id="footer-container"></div>
 
+    <!-- Hidden dialog -->
+    <div id="dialog" class="dialog">
+        <nav>
+            <button class="close-button" onclick="closeDialog()">&times;</button>
+            <p id="dialog-title">This is the title of the dialog</p>
+        </nav>
+        <p id="dialog-message">This is the message inside the dialog.</p>
+    </div>
+
+    <script>
+        function closeDialog() {
+            var dialog = document.getElementById('dialog');
+            dialog.style.display = 'none';
+        }
+    </script>
+
     <script src="javaScript/load_Head_Foot.js"></script>
+
+    <script type="module" src="javaScript/index.js"></script>
 </body>
 </html>

@@ -7,5 +7,40 @@ body {
 main{
     min-height: calc(100vh - 319px);
     background-color: black;
-    color: white;
+}
+
+.articles{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cell {
+    position: relative;
+    margin: 10px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; 
+    border: 2px solid #ecdf98; 
+    border-radius: 20px;  
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ecdf98;
+}
+
+.dialog {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/ServicesDialogBackground.avif);
+    width: 1000px;
 }
