@@ -43,4 +43,5 @@ main{
 .dialog {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/ServicesDialogBackground.avif);
     width: 1000px;
+    height: 75%;
 }

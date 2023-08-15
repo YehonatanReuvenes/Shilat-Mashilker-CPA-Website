@@ -83,27 +83,27 @@
         }
 
         function findText(title){
-            var dialogMessage = document.getElementById('dialog-message');
+            var dialogContent = document.getElementById('dialog-message');
             var dialogTitle = document.getElementById('dialog-title');
 
             fetch('servicesText.txt')
                 .then(response => response.text())
                 .then(content => {
                     const sections = content.split('===');
-                    let message = '';
+                    let serviceContent = '';
                 
                     for (let i = 1; i < sections.length; i += 2) {
                         const lineTitle = sections[i - 1].trim();
-                        const lineMessage = sections[i].trim();
+                        const lineContent = sections[i].trim();
 
                         if (lineTitle === title) {
-                            message = lineMessage.replace(/\n/g, '<br>');
+                            serviceContent = lineContent.replace(/\n/g, '<br>');
                             break;
                         }
                     }
                 
                     dialogTitle.innerHTML = title;
-                    dialogMessage.innerHTML = message;
+                    dialogContent.innerHTML = serviceContent;
                 })   
         }
 

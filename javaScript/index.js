@@ -39,7 +39,6 @@ getDoc(titlesDoc)
     }
 })
 
-
 function openDialog(container) {
 
     var title = container.textContent;
@@ -48,17 +47,16 @@ function openDialog(container) {
     getDoc(article).then((docSnapshot) => {
         if(docSnapshot.exists()){
             const data = docSnapshot.data();
-            const content = data.content;
-
+            let content = data.content;
             
-
+            content = content.replace(/\\n/g, '<br>');
             var dialog = document.getElementById('dialog');
 
             var dialogTitle = document.getElementById('dialog-title');
             var dialogMessage = document.getElementById('dialog-message');
 
-            dialogTitle.textContent = title;
-            dialogMessage.textContent = content;
+            dialogTitle.innerHTML = title;
+            dialogMessage.innerHTML = content;
 
             dialog.style.display = 'block';
 
