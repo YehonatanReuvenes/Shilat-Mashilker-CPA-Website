@@ -58,7 +58,7 @@ function openDialog(container) {
             dialogTitle.innerHTML = title;
             dialogMessage.innerHTML = content;
 
-            dialog.style.display = 'block';
+            dialog.style.display = 'block'; 
 
         }
     })
