@@ -49,7 +49,6 @@ function openDialog(container) {
             const data = docSnapshot.data();
             let content = data.content;
             
-            content = content.replace(/\\n/g, '<br>');
             var dialog = document.getElementById('dialog');
 
             var dialogTitle = document.getElementById('dialog-title');
