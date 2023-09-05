@@ -4,7 +4,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 100% ;
+    max-width: 90% ;
     max-height: 80%;
     color: white;
     transform: translate(-50%, -50%);
@@ -47,4 +47,11 @@
     padding-right: 40px;
     font-size: 20px;
     line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .dialog p{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }

@@ -65,3 +65,17 @@ button {
 h1{
     margin: 0;
 }
+
+@media (max-width: 768px){
+    tr {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    input[type="text"][placeholder="פרטי הפנייה"]{
+        width: 300px;
+        height: auto;
+    }
+ 
+}

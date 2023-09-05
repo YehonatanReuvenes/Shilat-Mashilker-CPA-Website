@@ -44,7 +44,7 @@ main {
 /* For 1 item in each row */
 @media (max-width: 500px) {
     .cell {
-        width: 100%;
+        width: 90%;
     }
 }
  

@@ -15,6 +15,7 @@ main{
 .clients {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; 
     text-align: center;
     padding-bottom: 20px;
@@ -146,3 +147,32 @@ h2{
     margin: 0;
     padding: 5px;
 } 
+
+@media (max-width: 768px){
+    .make_contact tr {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    input[type="text"][placeholder="פרטי הפנייה"]{
+        width: 300px;
+        height: auto;
+    }
+
+    .services table {
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+    }
+
+    .services td {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    summary{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+ 
+}
