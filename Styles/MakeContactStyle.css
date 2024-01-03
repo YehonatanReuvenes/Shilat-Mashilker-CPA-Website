@@ -19,6 +19,10 @@ main{
     text-align: center;
     align-items: center;
 }
+.make_contact img{
+    height: 450px;
+    margin-bottom: -20px;
+}
 .make_contact table{
     margin-right: 5%;
 }

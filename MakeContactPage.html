@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,49 +13,55 @@
     <main class="make_contact">
         <h1>השאירו פרטים ונחזור אליכם</h1>
 
-        <form action="https://formspree.io/f/xrgweene" method="POST">
-            <table>
-                <tr>
-                    <td>
-                        <input type="text" id="שם פרטי" name="שם פרטי" placeholder="*שם פרטי" required>
-                    </td>
-                    <td>
-                        <input type="text" id="מספר טלפון" name="מםפר טלפון" placeholder="*מספר טלפון" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" id="שם משפחה" name="שם משפחה" placeholder="*שם משפחה" required>
-                    </td>
-                    <td>
-                        <input type="email" id="אימייל" name="email" placeholder="*דואר אלקטרוני" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="text" id="פרטי הפנייה" name="פרטי הפנייה" placeholder="פרטי הפנייה">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <select id="סוג עסק" name="סוג עסק" required>
-                            <option value="">*בחר סוג עסק</option>
-                            <option value="פתיחת עוסק">פתיחת עוסק</option>
-                            <option value="חברה בעמ">חברה בע"מ</option>
-                            <option value="עמותה">עמותה</option>
-                            <option value="מלכר">מלכ"ר</option>
-                            <option value="שותפות">שותפות</option>
-                            <option value="עוסק מורשה">עוסק מורשה</option>
-                            <option value="עוסק פטור">עוסק פטור</option>
-                            <option value="החזר מס">החזר מס</option>
-                        </select>       
-                    </td>
-                    <td>   
-                        <button type="submit">צור קשר</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+
+            <form action="https://formspree.io/f/xrgweene" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="שם פרטי" name="שם פרטי" placeholder="*שם פרטי" required>
+                        </td>
+                        <td>
+                            <input type="text" id="מספר טלפון" name="מםפר טלפון" placeholder="*מספר טלפון" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="שם משפחה" name="שם משפחה" placeholder="*שם משפחה" required>
+                        </td>
+                        <td>
+                            <input type="email" id="אימייל" name="email" placeholder="*דואר אלקטרוני" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="פרטי הפנייה" name="פרטי הפנייה" placeholder="פרטי הפנייה">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="סוג עסק" name="סוג עסק" required>
+                                <option value="">*בחר סוג עסק</option>
+                                <option value="פתיחת עוסק">פתיחת עוסק</option>
+                                <option value="חברה בעמ">חברה בע"מ</option>
+                                <option value="עמותה">עמותה</option>
+                                <option value="מלכר">מלכ"ר</option>
+                                <option value="שותפות">שותפות</option>
+                                <option value="עוסק מורשה">עוסק מורשה</option>
+                                <option value="עוסק פטור">עוסק פטור</option>
+                                <option value="החזר מס">החזר מס</option>
+                            </select>       
+                        </td>
+                        <td>   
+                            <button type="submit">צור קשר</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <img src="img/MakeContact.png" alt="Shilat Mashilker CPA office IMG">
+
+        </div>
     </main>
     
     <div id="footer-container"></div>

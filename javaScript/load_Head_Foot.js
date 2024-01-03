@@ -34,3 +34,9 @@ fetch('foot.html')
   .then(content => {
     footerContainer.innerHTML = content;
   });
+
+
+    // Add the external script
+    var scriptTag = document.createElement('script');
+    scriptTag.src = 'https://cdn.enable.co.il/licenses/enable-L23672mbj2u640xv-0124-53927/init.js';
+    document.head.appendChild(scriptTag);

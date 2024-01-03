@@ -88,8 +88,8 @@ summary {
 .services img{
     max-height: 100px;
 }
-
 .make_contact{  
+    direction: ltr ;
     padding-top: 20px; 
     padding-bottom: 20px; 
     background-color: black;
@@ -97,8 +97,13 @@ summary {
     text-align: center;
     align-items: center;
 }
-.make_contact table{
-    margin-right: 5%;
+.make_contact img{
+    height: 450px;
+    margin-bottom: -20px;
+}
+.make_contact table {
+    direction: rtl;
+    margin-left: 5%;
 }
 input{
     width: 300px;
