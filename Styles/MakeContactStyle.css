@@ -9,21 +9,17 @@ main{
     background-color: black;
     color: white;
     width: 100%;
-}
-
-.make_contact{  
     padding-top: 20px; 
     padding-bottom: 20px; 
     background-color: black;
     color: white;
     text-align: center;
-    align-items: center;
 }
-.make_contact img{
+main img{
     height: 450px;
     margin-bottom: -20px;
 }
-.make_contact table{
+main table{
     margin-right: 5%;
 }
 input{
