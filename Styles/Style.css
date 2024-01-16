@@ -57,16 +57,20 @@ footer {
     padding-right: 90PX;
     font-family: Calibri;
 }
-footer a{
+footer a,
+footer .alink{
     padding-top: 5px;
     padding-bottom: 5px;
     display: block;
 }
-footer a img{
+footer a img,
+footer .alink img{
     max-height: var(--font-size);
 }
-
-a{
+a,
+.alink{
+    margin-top: 0;
+    margin-bottom: 0;
     color: black;
     text-decoration: none; 
     text-underline-offset: 5px;
