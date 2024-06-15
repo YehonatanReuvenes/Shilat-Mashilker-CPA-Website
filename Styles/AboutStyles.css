@@ -19,11 +19,13 @@ p{
     padding-right: 8%;
     margin: 0;
     width: 50%; 
+    min-width: 920px;
     line-height: 1.2;  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     p{
+        min-width: auto;
         padding-right: 4%;
         width: 92%; 
     }
