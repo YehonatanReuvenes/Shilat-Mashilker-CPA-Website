@@ -1,6 +1,9 @@
 // Load header content
+let path = window.location.pathname.split('/').filter(Boolean).length === 1
+  ? '../structure/header.html'
+  : 'structure/header.html';
 var headerContainer = document.getElementById('header-container');
-fetch('/structure/header.html')
+fetch(path)
   .then(response => response.text())
   .then(content => {
     headerContainer.innerHTML = content;
@@ -28,8 +31,11 @@ fetch('/structure/header.html')
   });
 
 // Load footer content
+path = window.location.pathname.split('/').filter(Boolean).length === 1
+  ? '../structure/footer.html'
+  : 'structure/footer.html';
 var footerContainer = document.getElementById('footer-container');
-fetch('/structure/footer.html')
+fetch(path)
   .then(response => response.text())
   .then(content => {
     footerContainer.innerHTML = content;
