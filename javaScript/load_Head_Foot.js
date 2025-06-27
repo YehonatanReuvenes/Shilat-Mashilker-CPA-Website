@@ -1,7 +1,7 @@
 // Load header content
 let path = window.location.pathname.split('/').filter(Boolean).length === 1
-  ? '../structure/header.html'
-  : 'structure/header.html';
+  ? 'structure/header.html'
+  : '../structure/header.html';
 var headerContainer = document.getElementById('header-container');
 fetch(path)
   .then(response => response.text())
@@ -32,8 +32,8 @@ fetch(path)
 
 // Load footer content
 path = window.location.pathname.split('/').filter(Boolean).length === 1
-  ? '../structure/footer.html'
-  : 'structure/footer.html';
+  ? 'structure/footer.html'
+  : '../structure/footer.html';
 var footerContainer = document.getElementById('footer-container');
 fetch(path)
   .then(response => response.text())
