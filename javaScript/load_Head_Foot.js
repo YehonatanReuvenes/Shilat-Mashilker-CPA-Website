@@ -1,9 +1,6 @@
 // Load header content
-let path = window.location.pathname.split('/').filter(Boolean).length === 1
-  ? 'structure/header.html'
-  : '../structure/header.html';
 var headerContainer = document.getElementById('header-container');
-fetch(path)
+fetch('https://shilatcpa.com/structure/header.html')
   .then(response => response.text())
   .then(content => {
     headerContainer.innerHTML = content;
@@ -31,11 +28,8 @@ fetch(path)
   });
 
 // Load footer content
-path = window.location.pathname.split('/').filter(Boolean).length === 1
-  ? 'structure/footer.html'
-  : '../structure/footer.html';
 var footerContainer = document.getElementById('footer-container');
-fetch(path)
+fetch('https://shilatcpa.com/structure/footer.html')
   .then(response => response.text())
   .then(content => {
     footerContainer.innerHTML = content;
