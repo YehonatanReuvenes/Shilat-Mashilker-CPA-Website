@@ -1,6 +1,6 @@
 // Load header content
 var headerContainer = document.getElementById('header-container');
-fetch('head.html')
+fetch('/structure/header.html')
   .then(response => response.text())
   .then(content => {
     headerContainer.innerHTML = content;
@@ -29,7 +29,7 @@ fetch('head.html')
 
 // Load footer content
 var footerContainer = document.getElementById('footer-container');
-fetch('foot.html')
+fetch('/structure/footer.html')
   .then(response => response.text())
   .then(content => {
     footerContainer.innerHTML = content;

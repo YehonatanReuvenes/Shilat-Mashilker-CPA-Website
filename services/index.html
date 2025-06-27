@@ -7,8 +7,8 @@
     <title>שילת משילקר- משרד רואי חשבון- שירותי המשרד</title>
     <meta name="description" content="שילת משילקר משרד רואי חשבון- המשרד מעניק מגוון שירותים ללקוחות מכל רחבי הארץ. חברות , עמותות, מלכרים, שותפויות, עצמאים , שכרים ופנסיונרים.&#10;שירותי המשרד כוללים: דוחות כספיים וביקורת, הנהלת חשבונות, חשבות שכר,החזרי מס, ייצוג ברשויות המס ועוד.">
     <link rel="icon" href="https://shilatcpa.com/img/LogoWhiteShort.png">
-    <link rel="stylesheet" href="Styles/ServicesStyle.css">
-    <link rel="stylesheet" href="Styles/dialogStyle.css">
+    <link rel="stylesheet" href="ServicesStyle.css">
+    <link rel="stylesheet" href="/structure/dialogStyle.css">
 </head>
 <body>
     <div id="header-container" data-page="Services"></div>
@@ -17,49 +17,49 @@
         <main>
             <div class="cell" onclick="openDialog('דוחות כספיים')">
                 <div class="container">
-                    <img src="img/Services Icons/דוחות כספיים gold.png" alt="SMoffice_דוחות כספיים"/>
+                    <img src="/img/Services Icons/דוחות כספיים gold.png" alt="SMoffice_דוחות כספיים"/>
                     דוחות כספיים
                 </div>
             </div>
             <div class="cell" onclick="openDialog('שירותי ביקורת')">
                 <div class="container">
-                    <img src="img/Services Icons/שירותי ביקורת gold.png" alt="SMoffice_שירותי ביקורת"/>
+                    <img src="/img/Services Icons/שירותי ביקורת gold.png" alt="SMoffice_שירותי ביקורת"/>
                     שירותי ביקורת
                 </div>
             </div>
             <div class="cell" onclick="openDialog('הנהלת חשבונות')">
                 <div class="container">
-                    <img src="img/Services Icons/הנהלת חשבונות gold.png" alt="SMoffice_הנהלת חשבונות"/>
+                    <img src="/img/Services Icons/הנהלת חשבונות gold.png" alt="SMoffice_הנהלת חשבונות"/>
                     הנהלת חשבונות
                 </div>
             </div>
             <div class="cell" onclick="openDialog('חשבות שכר')">
                 <div class="container">
-                    <img src="img/Services Icons/משכורות gold.png" alt="SMoffice_משכורות"/>
+                    <img src="/img/Services Icons/משכורות gold.png" alt="SMoffice_משכורות"/>
                     חשבות שכר
                 </div>
             </div>
             <div class="cell" onclick="openDialog('ייצוג מול רשויות המס')">
                 <div class="container">
-                    <img src="img/Services Icons/ייצוג מול רשויות המס gold.png" alt="SMoffice_ייצוג מול רשויות המס"/>
+                    <img src="/img/Services Icons/ייצוג מול רשויות המס gold.png" alt="SMoffice_ייצוג מול רשויות המס"/>
                     ייצוג מול רשויות המס
                 </div>
             </div>
             <div class="cell" onclick="openDialog('ייעוץ עסקי')">
                 <div class="container">
-                    <img src="img/Services Icons/ייעוץ עסקי gold.png" alt="SMoffice_ייעוץ עסקי" />
+                    <img src="/img/Services Icons/ייעוץ עסקי gold.png" alt="SMoffice_ייעוץ עסקי" />
                     ייעוץ עסקי
                 </div>
             </div>  
             <div class="cell" onclick="openDialog('טיפולים שוטפים')">
                 <div class="container">
-                    <img src="img/Services Icons/טיפולים שוטפים gold.png" alt="SMoffice_טיפולים שוטפים"/>
+                    <img src="/img/Services Icons/טיפולים שוטפים gold.png" alt="SMoffice_טיפולים שוטפים"/>
                     טיפולים שוטפים
                 </div>
             </div>  
             <div class="cell" onclick="openDialog('החזרי מס')">
                 <div class="container">
-                    <img src="img/Services Icons/החזרי מס gold.png" alt="SMoffice_החזרי מס"/>
+                    <img src="/img/Services Icons/החזרי מס gold.png" alt="SMoffice_החזרי מס"/>
                     החזרי מס
                 </div>
             </div>  
@@ -88,7 +88,7 @@
             var dialogContent = document.getElementById('dialog-message');
             var dialogTitle = document.getElementById('dialog-title');
 
-            fetch('servicesText.txt')
+            fetch('/services/servicesText.txt')
                 .then(response => response.text())
                 .then(content => {
                     const sections = content.split('===');
@@ -117,6 +117,6 @@
     
     <div id="footer-container"></div>
 
-    <script src="javaScript/load_Head_Foot.js"></script>
+    <script src="/javaScript/load_Head_Foot.js"></script>
 </body>
 </html>
